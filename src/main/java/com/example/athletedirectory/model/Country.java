@@ -18,9 +18,6 @@ public class Country {
     @Column(name = "flagimageurl")
     private String flagImageUrl;
 
-    @Column(name = "athlete")
-    private List<Athlete> athlete = new ArrayList<>();
-
     public Country() {
     }
 
@@ -46,13 +43,5 @@ public class Country {
 
     public void setFlagImageUrl(String flagImageUrl) {
         this.flagImageUrl = flagImageUrl;
-    }
-
-    public List<Athlete> getAthlete() {
-        return athlete;
-    }
-
-    public void setAthlete(List<Athlete> athlete) {
-        this.athlete = athlete;
     }
 }
